@@ -49,7 +49,7 @@ span {
   margin-top: 2rem;
 }
 
-input {
+input:not(input[type="submit"]) {
   height: 1.9rem;
   margin-left: 3.5rem;
   margin-right: 3.5rem;
@@ -87,7 +87,7 @@ input {
   margin-top: 2rem;
 }
 
-button {
+input[type="submit"] {
   width: 73%;
   height: 2.6rem;
   background-color: #005C9E;
@@ -95,16 +95,13 @@ button {
   border-radius: 4px;
   color: white;
   font-size: 18px;
+
+  text-align: center;
   cursor: pointer;
   margin-bottom: 2rem;
 }
 
-button a {
-  text-decoration: none;
-  color: white;
-}
-
-button:hover {
+input[type="submit"]:hover {
   background-color: #054574f1;
 }
 
