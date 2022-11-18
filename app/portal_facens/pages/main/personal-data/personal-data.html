@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados Pessoais - Portal Acadêmico Facens</title>
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../scripts/general.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div style="position: fixed;">
+    <nav>
+      <div class="logo-container">
+        <a href="../../main/home/home.html"><img src="../../../assets/logo-facens.png" alt="Logo-Facens"></a>
+      </div>
+      <div class="nav-title">
+        <button onclick="abrirPortalAcademico()" id="portal-academico-btn"
+          style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
+        <div id="sub-title" style="display: block;">
+          <a href="../personal-data/personal-data.html" class="active">Dados pessoais</a>
+          <a href="../../main/historic/historic.html">Histórico</a>
+          <a href="../notes-and-fouls/notes-and-fouls.html">Notas / Faltas</a>
+          <a href="../complementary-activities/complementary-activities.html">Ativ. Curriculares</a>
+          <a href="#">Matrícula on-line</a>
+          <a href="../support/support.html">Solicitações</a>
+        </div>
+
+        <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
+        <div id="sub-title-support" style="display: none;">
+          <a href="../create-support/create-support.html">Solicitar Atendimento</a>
+        </div>
+        <button>Ferramentas</button>
+      </div>
+
+      <div class="logout">
+        <a href="../../login/index.html">Sair</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="body-content">
+    <div class="header-container">
+      <h2>Dados Pessoais</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos alias, ea ab suscipit illum cum
+        laborum
+        eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
+    </div>
+    <div class="bell">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+    <div class="notifications-container">
+      <ul>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas de Web Design, e outras 2 disciplinas
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas em Programação Orientada a Objetos
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Bruna, sentimos sua falta!</h4>
+            <p>9d</p>
+          </div>
+          Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se
+          você acha que isso é um erro, <u>clique aqui</u>!
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Fique de olho nessa!</h4>
+            <p>20d</p>
+          </div>
+          O setor de Marketing da Facens acaba de atualizar os eventos que aconteceram por aqui no mês de
+          Novembro!
+        </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="three-columns-container">
+        <div class="left-content">
+          <div class="image-container">
+            <img src="../../../assets/foto_bruna.png" alt="Imagem do Aluno"/>
+            <div class="icon-container">
+              <i class="fa-regular fa-camera-rotate"></i>
+            </div>
+          </div>
+          <div class="informations-container">
+            <h3>Bruna Andressa Bragatti Antunes</h3>
+            <p>223635</p>
+          </div>
+        </div>
+        <div class="middle-content">
+          <div class="input-item">
+            <label for="emailInput">E-mail:</label>
+            <p>antunes.bruna@gmail.com</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Phone:</label>
+            <p>(11) 99765-6745</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Curso:</label>
+            <p>Eng. de Computação</p>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="input-item">
+            <label for="emailInput">Data de Nascimento:</label>
+            <p>21/03/1999</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Naturalidade:</label>
+            <p>Brasileira</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Turno:</label>
+            <p>Noite</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="three-columns-container" style="justify-content: flex-start; gap: 72px">
+        <div class="left-content">
+          <div class="input-item">
+            <label for="emailInput">CEP:</label>
+            <p>18051-892</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Complemento:</label>
+            <p>QUADRA B4 LOTE 5</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Cidade:</label>
+            <p>Sorocaba / SP</p>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="input-item">
+            <label for="emailInput">Logradouro:</label>
+            <p>Rua Lourdes Silva Santos</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Bairro:</label>
+            <p>Parque Residencial Villa dos Inglezes</p>
+          </div>
+          <div class="input-item">
+            <label for="emailInput">Número:</label>
+            <p>74</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container" style="display: none;">
+      <div class="icon-container">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="content-container">
+        <div class="title-container">
+          <h2>Justificar ausência</h2>
+        </div>
+        <div class="input-container">
+          <h4>Causa</h4>
+          <div class="checkbox-container">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Consulta Médica
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Consulta ao médico
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Concurso Vestibular
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Consulta ao médico
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Outros
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <h4>Anexar Comprovante</h4>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Atestado médico, atestado de óbito..."
+              aria-label="Atestado médico, atestado de óbito..." aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">Upload</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <h4>Descrição</h4>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1"
+              placeholder="Descreva os motivos da sua ausência..." rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button>Enviar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
