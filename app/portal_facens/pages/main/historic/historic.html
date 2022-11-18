@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="../scripts/general.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,17 +22,21 @@
         <a href="../../main/home/home.html"><img src="../../../assets/logo-facens.png" alt="Logo-Facens"></a>
       </div>
       <div class="nav-title">
-        <button onclick="openSub()" id="btn-title" style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
+        <button onclick="abrirPortalAcademico()" id="portal-academico-btn"
+          style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
         <div id="sub-title" style="display: block;">
-          <a href="#">Dados pessoais</a>
+          <a href="../personal-data/personal-data.html">Dados pessoais</a>
           <a href="../../main/historic/historic.html" class="active">Histórico</a>
           <a href="#">Notas / Faltas</a>
-          <a href="../complementary-activities/complementary-activities.html">Ativ.currículares</a>
+          <a href="../complementary-activities/complementary-activities.html">Ativ. Currículares</a>
           <a href="../registration/registration.html">Matrícula on-line</a>
           <a href="../support/support.html">Solicitações</a>
         </div>
 
-        <button>Suporte</button>
+        <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
+        <div id="sub-title-support" style="display: none;">
+          <a href="../create-support/create-support.html">Solicitar Atendimento</a>
+        </div>
         <button>Ferramentas</button>
       </div>
 
@@ -73,7 +78,8 @@
             <h4>Bruna, sentimos sua falta!</h4>
             <p>9d</p>
           </div>
-          Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se você acha que isso é um erro, <u>clique aqui</u>!
+          Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se você acha
+          que isso é um erro, <u>clique aqui</u>!
         </li>
         <li>
           <div class="title-container">

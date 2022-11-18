@@ -1,10 +1,14 @@
-function toggleButton() {
-  const email = document.getElementById('#email').value;
-  const senha = document.getElementById('#senha').value;
+function validateForm() {
+  var username = document.forms["loginEmail"]["email"].value;
+  var password = document.forms["loginEmail"]["senha"].value;
 
-  if (email && senha) {
-    document.getElementById('#login').disabled = false;
-    return;
+
+  if ((username == "223635@facens.br") && (password == "bruna_antunes")) {
+    window.location.href = '../main/home/home.html';
+    return false;
   }
-  document.getElementById('#login').disabled = true;
+  else {
+    alert("Não foi possível fazer Login. Cheque as credenciais e tente novamente!");
+  }
+
 }

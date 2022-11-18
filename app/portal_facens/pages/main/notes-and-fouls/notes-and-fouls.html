@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas e Faltas - Portal Acadêmico Facens</title>
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+  <script src="../scripts/general.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div style="position: fixed;">
+    <nav>
+      <div class="logo-container">
+        <a href="../../main/home/home.html"><img src="../../../assets/logo-facens.png" alt="Logo-Facens"></a>
+      </div>
+      <div class="nav-title">
+        <button onclick="abrirPortalAcademico()" id="portal-academico-btn" style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
+        <div id="sub-title" style="display: block;">
+          <a href="../personal-data/personal-data.html">Dados pessoais</a>
+          <a href="../../main/historic/historic.html">Histórico</a>
+          <a href="../notes-and-fouls/notes-and-fouls.html" class="active">Notas / Faltas</a>
+          <a href="../complementary-activities/complementary-activities.html">Ativ. Curriculares</a>
+          <a href="#">Matrícula on-line</a>
+          <a href="../support/support.html">Solicitações</a>
+        </div>
+
+                        <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
+                <div id="sub-title-support" style="display: none;">
+                    <a href="../create-support/create-support.html">Solicitar Atendimento</a>
+                </div>
+        <button>Ferramentas</button>
+      </div>
+
+      <div class="logout">
+        <a href="../../login/index.html">Sair</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="body-content">
+    <div class="header-container">
+        <h2>Notas e Faltas</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos alias, ea ab suscipit illum cum
+            laborum
+            eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
+    </div>
+    <div class="bell">
+        <i class="fa-solid fa-bell"></i>
+    </div>
+    <div class="notifications-container">
+        <ul>
+            <li>
+                <div class="title-container">
+                    <h4>Boas Noticias, Bruna!</h4>
+                    <p>4d</p>
+                </div>
+                Houve uma alteração em suas notas de Web Design, e outras 2 disciplinas
+            </li>
+            <li>
+                <div class="title-container">
+                    <h4>Boas Noticias, Bruna!</h4>
+                    <p>4d</p>
+                </div>
+                Houve uma alteração em suas notas em Programação Orientada a Objetos
+            </li>
+            <li>
+                <div class="title-container">
+                    <h4>Bruna, sentimos sua falta!</h4>
+                    <p>9d</p>
+                </div>
+                Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se
+                você acha que isso é um erro, <u>clique aqui</u>!
+            </li>
+            <li>
+                <div class="title-container">
+                    <h4>Fique de olho nessa!</h4>
+                    <p>20d</p>
+                </div>
+                O setor de Marketing da Facens acaba de atualizar os eventos que aconteceram por aqui no mês de
+                Novembro!
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h2 class="title-container">Notas</h2>
+        <table class="table-container">
+            <thead>
+                <tr>
+                  <th>Disciplinas</th>
+                  <th>AC1</th>
+                  <th>AC2</th>
+                  <th>AG</th>
+                  <th>AF</th>
+                  <th>SUB</th>
+                  <th>MÉDIA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Banco de dados</td>
+                    <td>9,93</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="closed">1,48</td>
+                </tr>
+                <tr>
+                    <td>Construções de Ambientes Virtuais</td>
+                    <td>6,80</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="closed">1,02</td>
+                </tr>
+                <tr>
+                    <td>Inteligência de Negócios</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="ongoing">4,5</td>
+                </tr>
+                <tr>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>6,88</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="closed">1,03</td>
+                </tr>
+                <tr>
+                    <td>UPx Engenharia Contemporânea</td>
+                    <td>7,5</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="closed">1,12</td>
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                    <td>10</td>
+                    <td>9,5</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="closed">4,35</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="main-content">
+        <h2 class="title-container">Faltas</h2>
+        <table class="table-container">
+            <thead>
+                <tr>
+                    <th>Discipinas</th>
+                    <th>Data</th>
+                    <th>Situações</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UPx - Engenharia Contemporânea</td>
+                    <td>09/11/2022</td>
+                    <td>02/10</td>
+                    <td class="openModalButton1"><i class="fa-regular fa-circle-question"></i></td>
+
+                </tr>
+                <tr>
+                    <td>Construções de Ambientes Virtuais</td>
+                    <td>10/10/2022</td>
+                    <td>02/10</td>
+                    <td class="openModalButton2"><i class="fa-regular fa-circle-question"></i></td>
+
+                </tr>
+                <tr>
+                    <td>Web Design</td>
+                    <td>10/10/2022</td>
+                    <td>02/20</td>
+                    <td class="openModalButton3"><i class="fa-regular fa-circle-question"></i></td>
+                </tr>
+                <tr>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>06/10/2022</td>
+                    <td>06/20</td>
+                    <td class="openModalButton4"><i class="fa-regular fa-circle-question"></i></td>
+                </tr>
+                <tr>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>04/10/2022</td>
+                    <td>04/20</td>
+                    <td class="openModalButton5"><i class="fa-regular fa-circle-question"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal-container" style="display: none;">
+      <div class="icon-container">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="content-container">
+        <div class="title-container">
+          <h2>Justificar ausência</h2>
+        </div>
+        <div class="input-container">
+          <h4>Causa</h4>
+          <div class="checkbox-container">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Consulta Médica
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Consulta ao médico
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Concurso Vestibular
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Consulta ao médico
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+              <label class="form-check-label">
+                Outros
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <h4>Anexar Comprovante</h4>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Atestado médico, atestado de óbito..." aria-label="Atestado médico, atestado de óbito..." aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">Upload</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <h4>Descrição</h4>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Descreva os motivos da sua ausência..." rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button>Enviar</button>
+      </div>
+    </div>
+</div>
+</body>
+
+</html>
