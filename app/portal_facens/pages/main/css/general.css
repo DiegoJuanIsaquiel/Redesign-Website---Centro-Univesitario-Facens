@@ -35,7 +35,7 @@ a {
   padding: 1rem;
 }
 
-#sub-title {
+#sub-title, #sub-title-support {
   display: none;
   margin-top: -1rem;
   display: grid;
@@ -51,14 +51,14 @@ a {
   color: #ffffff;
 }
 
-#sub-title a {
+#sub-title a, #sub-title-support a{
   color: #005C9E;
   cursor: pointer;
   display: grid;
   padding: 0.4rem;
 }
 
-#sub-title .active{
+#sub-title .active, #sub-title-support .active{
     font-weight: bold;
 }
 
