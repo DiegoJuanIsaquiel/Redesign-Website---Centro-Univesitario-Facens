@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrícula on-line - Portal Acadêmico</title>
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+</head>
+
+<body>
+  <div style="position: fixed;">
+    <nav>
+      <div class="logo-container">
+        <a href="../../main/home/home.html"><img src="../../../assets/logo-facens.png" alt="Logo-Facens"></a>
+      </div>
+
+      <div class="nav-title">
+        <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
+        <div id="sub-title" style="display: none;">
+          <a href="#">Dados pessoais</a>
+          <a href="../../main/historic/historic.html">Histórico</a>
+          <a href="#">Notas / Faltas</a>
+          <a href="../complementary-activities/complementary-activities.html">Ativ.currículares</a>
+          <a href="../registration/registration.html">Matrícula on-line</a>
+          <a href="../support/support.html">Solicitações</a>
+        </div>
+
+        <button>Suporte</button>
+        <button>Ferramentas</button>
+      </div>
+
+      <div class="logout">
+        <a href="../../login/index.html">Sair</a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="registration-body">
+    <div>
+      <h2>Matrícula On-line</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos alias, ea ab suscipit illum cum laborum
+        eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
+    </div>
+
+    <div class="bell">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+
+    <div class="notifications-container">
+      <ul>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas de Web Design, e outras 2 disciplinas
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas em Programação Orientada a Objetos
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Bruna, sentimos sua falta!</h4>
+            <p>9d</p>
+          </div>
+          Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se você acha
+          que isso é um erro, <u>clique aqui</u>!
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Fique de olho nessa!</h4>
+            <p>20d</p>
+          </div>
+          O setor de Marketing da Facens acaba de atualizar os eventos que aconteceram por aqui no mês de Novembro!
+        </li>
+      </ul>
+    </div>
+
+    <div id="registration-container">
+      <div class="register-grid">
+        <div class="semester-grid">
+          <div class="accordion js-accordion">
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">1º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Algoritmos e Programação
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Análise de Dados
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Comunicação Efetiva - EaD
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Fundamentos de Matemática e Física
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Programação e IoT
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    UPX – Engenharia Criativa
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion item -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">2º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Cálculo Diferencial e Integral I
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Conexão Homem e Sociedade - EaD
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Fundamentos de Química
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Programação Estruturada
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Web Design
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    UPX – Engenharia Contemporânea
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion item -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">3º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Arquitetura e Organização Básica de Computadores
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Design Colaborativo - EaD
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Fenômenos Elétricos
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Métodos Numéricos
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Modelagem Matemática
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Upx - Engenharia da Inovação
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion item -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">4º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Banco de Dados
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Construção de Ambientes Virtuais
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Métodos Aplicados à Engenharia
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Programação Orientada a Objetos
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Transformação Digital
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    UPX - Smart Cities
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion item -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">5º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Desenvolvimento Web
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Estrutura de Dados
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Sistemas Operacionais
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Upx - Domótica
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion item -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">6º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Desenvolvimento Mobile
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Redes de Computadores
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Sistemas Eletrônicos
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Upx - Educação, Agro e Saúde 4.0
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">7º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Arquitetura Orientada à Serviços
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Eletrônica Digital Computacional
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Engenharia de Software
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Upx - TIC para Cidades Inteligentes
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">8º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Processamento de Imagens
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Processamento de Sinais
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Upx - Realidade Aumentada
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">9º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Complexidade de Algoritmos
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Inteligência Artificial
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Gestão Empresarial
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Projetos Computacionais I
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion -->
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">10º Semestre</div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="first-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Programação Distribuída
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Sistemas Digitais
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Gestão do Trabalho
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                    Projetos Computacionais II
+                  </label>
+                </div>
+              </div><!-- end of accordion body -->
+            </div><!-- end of accordion -->
+
+          </div>
+        </div>
+
+        <div class="calendar-grid">
+          <table>
+            <tr>
+              <th class="nbsp">&nbsp;</th>
+              <th>Seg.</th>
+              <th>Ter.</th>
+              <th>Qua.</th>
+              <th>Qui</th>
+              <th>Sex</th>
+              <th>Sab.</th>
+            </tr>
+
+            <tr>
+              <td class="hora">08:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            <tr>
+
+            <tr>
+              <td class="hora">09:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">10:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">11:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">12:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">13:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">14:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">15:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">16:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">17:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">18:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">19:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">20:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">21:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">22:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="hora">23:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+          </table>
+
+          <div class="postit-1">
+            <span>CP110TIN2 - Construção de ambientes virtuais</span>
+            <span>Segunda - 19:00 às 19:50</span>
+            <span>Segunda - 19:50 às 20:40</span>
+          </div>
+
+          <div class="postit-2">
+            <span>CP110TIN2 - Web Design</span>
+            <span>Segunda - 21:00 às 21:50</span>
+            <span>Segunda - 21:50 às 22:40</span>
+          </div>
+
+          <div class="postit-3">
+            <span>CP110TIN2 -Inteligência de negócios</span>
+            <span>Terça - 14:50 às 15:40</span>
+            <span>Terça - 15:40 às 16:30</span>
+            <span>Terça - 16:30 às 17:20</span>
+            <span>Terça - 17:20 às 18:30</span>
+          </div>
+
+          <div class="postit-4">
+            <span>CP110TIN2 - Construção de ambientes virtuais</span>
+            <span>Terça - 19:00 às 19:50</span>
+            <span>Terça - 19:50 às 20:40</span>
+          </div>
+
+          <div class="postit-5">
+            <span>CP110TIN3 - Banco de Dados</span>
+            <span>Quarta - 19:00 às 19:50</span>
+            <span>Quarta - 19:50 às 20:40</span>
+          </div>
+
+          <div class="postit-6">
+            <span>CP110TIN2 - Programação Orientada a Objetos</span>
+            <span>Quinta - 19:00 às 19:50</span>
+            <span>Quinta - 19:50 às 20:40</span>
+          </div>
+
+          <div class="postit-7">
+            <span>CP110TIN2 - Construção de ambientes virtuaisCP110TIN3 - Banco de Da...</span>
+            <span>Quinta - 19:00 às 19:50</span>
+            <span>Quinta - 19:50 às 20:40</span>
+          </div>
+
+          <div class="postit-8">
+            <span>CP110TIN2 - Programação Orientada a Objetos</span>
+            <span>Terça - 21:00 às 21:50</span>
+            <span>Terça - 21:50 às 22:40</span>
+          </div>
+
+      </div>
+    </div>
+    
+    </div>
+</body>
+
+</html>
