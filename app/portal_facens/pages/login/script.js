@@ -3,7 +3,7 @@ function validateForm() {
   var password = document.forms["loginEmail"]["senha"].value;
 
 
-  if ((username == "223835@facens.br") && (password == "bruna_antunes")) {
+  if ((username == "223635@facens.br") && (password == "bruna_antunes")) {
     window.location.href = '../main/home/home.html';
     return false;
   }
