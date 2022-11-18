@@ -22,7 +22,7 @@
         <a href="../../main/home/home.html"><img src="../../../assets/logo-facens.png" alt="Logo-Facens"></a>
       </div>
       <div class="nav-title">
-        <button onclick="openSub()" id="btn-title" style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
+        <button onclick="abrirPortalAcademico()" id="portal-academico-btn" style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
         <div id="sub-title" style="display: block;">
           <a href="#">Dados pessoais</a>
           <a href="../../main/historic/historic.html" class="active">Histórico</a>
@@ -32,7 +32,10 @@
           <a href="../support/support.html">Solicitações</a>
         </div>
 
-        <button>Suporte</button>
+                        <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
+                <div id="sub-title-support" style="display: none;">
+                    <a href="../create-support/create-support.html">Solicitar Atendimento</a>
+                </div>
         <button>Ferramentas</button>
       </div>
 
