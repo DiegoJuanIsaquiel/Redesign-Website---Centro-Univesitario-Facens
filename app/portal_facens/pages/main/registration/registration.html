@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="../scripts/general.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -26,13 +27,14 @@
       </div>
 
       <div class="nav-title">
-        <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
-        <div id="sub-title" style="display: none;">
-          <a href="#">Dados pessoais</a>
+        <button onclick="openSub()" id="btn-title"
+          style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
+        <div id="sub-title" style="display: block;">
+          <a href="../personal-data/personal-data.html">Dados pessoais</a>
           <a href="../../main/historic/historic.html">Histórico</a>
-          <a href="#">Notas / Faltas</a>
+          <a href="../notes-and-fouls/notes-and-fouls.html">Dados pessoais</a>
           <a href="../complementary-activities/complementary-activities.html">Ativ.currículares</a>
-          <a href="../registration/registration.html">Matrícula on-line</a>
+          <a href="../registration/registration.html" class="active">Matrícula on-line</a>
           <a href="../support/support.html">Solicitações</a>
         </div>
 
@@ -211,7 +213,7 @@
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled checked>
                   <label class="form-check-label" for="flexCheckIndeterminateDisabled">
                     Fenômenos Elétricos
                   </label>
@@ -256,8 +258,9 @@
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                    disabled>
+                  <label class="form-check-label" for="flexCheckIndeterminateDisabled">
                     Métodos Aplicados à Engenharia
                   </label>
                 </div>
@@ -268,7 +271,8 @@
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" checked
+                  disabled>
                   <label class="form-check-label" for="flexCheckChecked">
                     Transformação Digital
                   </label>
@@ -540,7 +544,10 @@
             <tr>
               <td class="hora">14:00</td>
               <td></td>
-              <td></td>
+              <td class="materia">
+                Inteligência de Negócios <br>
+                Terça: 14:50 às 15:40
+              </td>
               <td></td>
               <td></td>
               <td></td>
@@ -550,7 +557,10 @@
             <tr>
               <td class="hora">15:00</td>
               <td></td>
-              <td></td>
+              <td class="materia">
+                Inteligência de Negócios <br>
+                Terça: 15:40 às 16:30
+              </td>
               <td></td>
               <td></td>
               <td></td>
@@ -560,7 +570,10 @@
             <tr>
               <td class="hora">16:00</td>
               <td></td>
-              <td></td>
+              <td class="materia">
+                Inteligência de Negócios <br>
+                Terça: 16:30 às 17:20
+              </td>
               <td></td>
               <td></td>
               <td></td>
@@ -570,7 +583,10 @@
             <tr>
               <td class="hora">17:00</td>
               <td></td>
-              <td></td>
+              <td class="materia">
+                Inteligência de Negócios <br>
+                Terça: 17:20 às 18:10
+              </td>
               <td></td>
               <td></td>
               <td></td>
@@ -589,40 +605,82 @@
 
             <tr>
               <td class="hora">19:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="materia">
+                Construções de Ambientes Virtuais <br>
+                Segunda: 19:00 às 19:50
+              </td>
+              <td class="materia">
+                Web Design <br>
+                Terça: 19:00 às 19:50
+              </td>
+              <td class="materia">
+                Banco de Dados <br>
+                Quarta: 19:00 às 19:50
+              </td>
+              <td class="materia">
+                Programação Orientada a Objetos <br>
+                Quinta: 19:00 às 19:50
+              </td>
               <td></td>
               <td></td>
             </tr>
 
             <tr>
               <td class="hora">20:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="materia">
+                Construções de Ambientes Virtuais <br>
+                Segunda: 19:50 às 20:40
+              </td>
+              <td class="materia">
+                Web Design <br>
+                Terça: 19:50 às 20:40
+              </td>
+              <td class="materia">
+                Banco de Dados <br>
+                Quarta: 19:50 às 20:40
+              </td>
+              <td class="materia">
+                Programação Orientada a Objetos <br>
+                Quinta: 19:50 às 20:40
+              </td>
               <td></td>
               <td></td>
             </tr>
 
             <tr>
               <td class="hora">21:00</td>
+              <td class="materia">
+                Web Design <br>
+                Segunda: 21:00 às 21:50
+              </td>
+              <td class="materia">
+                Programação Orientada a Objetos <br>
+                Terça: 21:00 às 21:50
+              </td>
               <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="materia">
+                Banco de Dados <br>
+                Quinta: 21:00 às 21:50
+              </td>
               <td></td>
               <td></td>
             </tr>
 
             <tr>
               <td class="hora">22:00</td>
+              <td class="materia">
+                Web Design <br>
+                Segunda: 21:50 às 22:40
+              </td>
+              <td class="materia">
+                Web Design <br>
+                Terça: 21:50 às 22:40
+              </td>
               <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="materia">
+                Banco de Dados <br>
+                Quinta: 21:50 às 22:40
+              </td>
               <td></td>
               <td></td>
             </tr>
@@ -638,60 +696,13 @@
             </tr>
 
           </table>
-
-          <div class="postit-1">
-            <span>CP110TIN2 - Construção de ambientes virtuais</span>
-            <span>Segunda - 19:00 às 19:50</span>
-            <span>Segunda - 19:50 às 20:40</span>
+          <div class="button-container">
+            <button disabled>Finalizar</button>
           </div>
-
-          <div class="postit-2">
-            <span>CP110TIN2 - Web Design</span>
-            <span>Segunda - 21:00 às 21:50</span>
-            <span>Segunda - 21:50 às 22:40</span>
-          </div>
-
-          <div class="postit-3">
-            <span>CP110TIN2 -Inteligência de negócios</span>
-            <span>Terça - 14:50 às 15:40</span>
-            <span>Terça - 15:40 às 16:30</span>
-            <span>Terça - 16:30 às 17:20</span>
-            <span>Terça - 17:20 às 18:30</span>
-          </div>
-
-          <div class="postit-4">
-            <span>CP110TIN2 - Construção de ambientes virtuais</span>
-            <span>Terça - 19:00 às 19:50</span>
-            <span>Terça - 19:50 às 20:40</span>
-          </div>
-
-          <div class="postit-5">
-            <span>CP110TIN3 - Banco de Dados</span>
-            <span>Quarta - 19:00 às 19:50</span>
-            <span>Quarta - 19:50 às 20:40</span>
-          </div>
-
-          <div class="postit-6">
-            <span>CP110TIN2 - Programação Orientada a Objetos</span>
-            <span>Quinta - 19:00 às 19:50</span>
-            <span>Quinta - 19:50 às 20:40</span>
-          </div>
-
-          <div class="postit-7">
-            <span>CP110TIN2 - Construção de ambientes virtuaisCP110TIN3 - Banco de Da...</span>
-            <span>Quinta - 19:00 às 19:50</span>
-            <span>Quinta - 19:50 às 20:40</span>
-          </div>
-
-          <div class="postit-8">
-            <span>CP110TIN2 - Programação Orientada a Objetos</span>
-            <span>Terça - 21:00 às 21:50</span>
-            <span>Terça - 21:50 às 22:40</span>
-          </div>
+        </div>
 
       </div>
-    </div>
-    
+
     </div>
 </body>
 
