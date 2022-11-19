@@ -206,7 +206,8 @@ h2{
 
 .three-columns-container .image-container .icon-container i{
   color: #0099F2;
-  padding-left: 23%;
+  padding-left: 5%;
+  font-size: 18px;
 }
 
 .three-columns-container .informations-container h3{
