@@ -1,16 +1,34 @@
-function openSub() {
-    var btn = document.querySelector('#btn-title');
-    var display = document.querySelector('#sub-title').style.display;
-    if (display == 'none') {
+function abrirPortalAcademico() {
+    var portalAcademicoButton = document.querySelector('#portal-academico-btn');
+    var portalAcademicoDisplay = document.querySelector('#sub-title').style.display;
+
+    if (portalAcademicoDisplay == 'none') {
       document.querySelector('#sub-title').style.display = 'block';
-      btn.style.background = '#0099F2';
-      btn.style.color = 'white';
-      btn.style.borderRight = '8px solid #005C9E';
+      portalAcademicoButton.style.background = '#0099F2';
+      portalAcademicoButton.style.color = 'white';
+      portalAcademicoButton.style.borderRight = '8px solid #005C9E';
     } else {
       document.querySelector('#sub-title').style.display = 'none';
-      btn.style.background = 'white';
-      btn.style.color = '#005C9E';
-      btn.style.borderRight = '';
+      portalAcademicoButton.style.background = 'white';
+      portalAcademicoButton.style.color = '#005C9E';
+      portalAcademicoButton.style.borderRight = '';
+    }
+}
+
+function abrirSuporte() {
+    var suporteButton = document.querySelector('#suporte-btn');
+    var suporteDisplay = document.querySelector('#sub-title-support').style.display;
+
+    if (suporteDisplay== 'none') {
+      document.querySelector('#sub-title-support').style.display = 'block';
+      suporteButton.style.background = '#0099F2';
+      suporteButton.style.color = 'white';
+      suporteButton.style.borderRight = '8px solid #005C9E';
+    } else {
+      document.querySelector('#sub-title-support').style.display = 'none';
+      suporteButton.style.background = 'white';
+      suporteButton.style.color = '#005C9E';
+      suporteButton.style.borderRight = '';
     }
 }
 

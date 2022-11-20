@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico - Portal Acadêmico</title>
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="../scripts/general.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div style="position: fixed;">
+    <nav>
+      <div class="logo-container">
+        <a href="../../main/home/home.html"><img src="../../../assets/logo-facens.png" alt="Logo-Facens"></a>
+      </div>
+      <div class="nav-title">
+        <button onclick="abrirPortalAcademico()" id="portal-academico-btn"
+          style="background-color: #0099F2; border-right: 8px solid #005C9E; color: white;">Portal Acadêmico</button>
+        <div id="sub-title" style="display: block;">
+          <a href="../personal-data/personal-data.html">Dados pessoais</a>
+          <a href="../../main/historic/historic.html" class="active">Histórico</a>
+          <a href="../notes-and-fouls/notes-and-fouls.html">Notas / Faltas</a>
+          <a href="../complementary-activities/complementary-activities.html">Ativ. Currículares</a>
+          <a href="../registration/registration.html">Matrícula on-line</a>
+          <a href="../support/support.html">Solicitações</a>
+        </div>
+
+        <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
+        <div id="sub-title-support" style="display: none;">
+          <a href="../create-support/create-support.html">Solicitar Atendimento</a>
+        </div>
+        <button>Ferramentas</button>
+      </div>
+
+      <div class="logout">
+        <a href="../../login/index.html">Sair</a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="historic-body">
+    <div>
+      <h2>Histórico</h2>
+      <p>Consulte seu histórico acadêmico ao longo de todo o curso. Todas as suas disciplinas, turmas e aprovações estarão contidas aqui</p>
+    </div>
+
+    <div class="bell">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+
+    <div class="notifications-container">
+      <ul>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas de Web Design, e outras 2 disciplinas
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas em Programação Orientada a Objetos
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Bruna, sentimos sua falta!</h4>
+            <p>9d</p>
+          </div>
+          Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se você acha
+          que isso é um erro, <u>clique aqui</u>!
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Fique de olho nessa!</h4>
+            <p>20d</p>
+          </div>
+          O setor de Marketing da Facens acaba de atualizar os eventos que aconteceram por aqui no mês de Novembro!
+        </li>
+      </ul>
+    </div>
+
+    <div id="historic-container">
+      <div class="semester-grid">
+        <h3>Eng. de Computação - 2022S1</h3>
+
+        <div class="first-semester">
+          <div class="history-grid">
+            <span>Disciplinas</span>
+            <span class="classes">Turmas</span>
+            <span class="situation">Situação</span>
+          </div>
+
+          <div class="subjects">
+            <span>Programação Estruturada</span>
+            <span class="pe-results">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+
+          <div class="subjects">
+            <span>Fenômenos Elétricos</span>
+            <span class="electric-results">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+
+          <div class="subjects">
+            <span>UPx-Engenharia Criativa</span>
+            <span class="upx-results">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+
+          <div class="subjects">
+            <span>Programação e IoT</span>
+            <span class="iot-results">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+        </div>
+
+        <div class="break-apart">
+          <h3>Eng. de Computação - 2022S2</h3>
+
+          <div class="secund-semester">
+            <div class="history-grid">
+              <span>Disciplinas</span>
+              <span class="classes">Turmas</span>
+              <span class="situation">Situação</span>
+            </div>
+
+            <div class="subjects">
+              <span>Programação Orientada a Objetos</span>
+              <span class="po-results">CPITN02</span>
+              <span class="situation-po">Em andamento</span>
+            </div>
+
+            <div class="subjects">
+              <span>Construção de Ambientes Virtuais</span>
+              <span class="cav-results">CPITN02</span>
+              <span class="situation-cav">Em andamento</span>
+            </div>
+
+            <div class="subjects">
+              <span>Banco de dados</span>
+              <span class="database-results">CPITN02</span>
+              <span class="situation-database">Em andamento</span>
+            </div>
+
+            <div class="subjects">
+              <span>Web Design</span>
+              <span class="web-results">CPITN02</span>
+              <span class="situation-web">Em andamento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>

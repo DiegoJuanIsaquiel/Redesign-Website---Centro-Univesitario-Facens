@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+}
+
+.intro-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.intro-section .background-image img{
+    height: 110vh;
+}
+
+
+.sidebar-container{
+    color: var(--primary-color);
+}
+
+
+#img-container {
+    position: relative;
+    border-radius: 18px;
+    background-image: url("../assets/edificio-facens.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 80%;
+    margin: 11rem auto 3rem auto;
+    z-index: 0;
+
+}
+
+#img-container::before {
+    content: '';
+    background: #0B62E7;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 18px;
+}
+
+#text-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'AmsiPro-Bold';
+}
+
+#text-header-container button {
+    padding: 10px 20px;
+    z-index: 2;
+    width: 120px;
+    margin-top: 18px;
+    border-radius: 6px;
+    border: none;
+    color: #0B62E7;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'AmsiPro-Bold';
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+#filters {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#filters h2 {
+    margin-top: 100px;
+}
+
+#inputs-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 0;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.filter-button {
+    color: #0B62E7;
+    border: 2px solid #0B62E7;
+    background: none;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+button + button {
+    margin-left: 1rem;
+}
+
+#articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 2.5rem;
+    justify-items: center;
+    width: 80%;
+    margin: 0 auto 8rem auto;
+}
+
+.articles-container {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 20px;
+    background: #dfecfd;
+    min-height: 150px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.articles-container p {
+    font-family: 'AmsiPro-Regular', sans-serif;
+    line-height: 1.3;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.articles-container h3 {
+    font-family: 'AmsiPro-Bold', sans-serif;
+}

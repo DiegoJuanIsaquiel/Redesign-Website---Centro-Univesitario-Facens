@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    background: aliceblue;
+}
+
+
+.intro-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.intro-section .background-image img{
+    height: 110vh;
+}
+
+.intro-section > .left-content{
+    position: absolute;
+    left: 5vw;
+    top: 30%;
+    color: #FFFFFF;
+}
+
+.intro-section > .left-content .title-container{
+    font-family: 'Amsi Pro Narw Ultra';
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.intro-section > .left-content .title-container h1::before{
+    content: '';
+    width: 91px;
+    height: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+    position: absolute;
+    top: -34px;
+}
+
+.intro-section > .left-content .paragraph-container{
+    font-size: 18px;
+    font-family: 'AmsiPro-Regular', sans-serif;
+    width: 33.333%;
+}
+
+.intro-section > .right-content{
+    display: flex;
+    align-items: center;
+}
+
+.intro-section > .right-content img{
+    border-radius: 24px;
+    filter: drop-shadow(0px 0px 142px rgba(37, 37, 37, 0.47));
+}
+
+.intro-section > .right-content .main-image{
+    z-index: 2;
+}
+
+.intro-section > .right-content .main-image img{
+    width: 350px;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+
+.intro-section > .right-content .secondary-image img{
+    width: 250px;
+    height: 350px;
+    margin-left: -15%;
+
+    object-fit: cover;
+    z-index: -1;
+}
+
+#details-section {
+    margin-top: 158px;
+}
+
+.box-container-inovacao {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.informacoes-inovacao {
+    margin-bottom: 150px;
+}
+
+
+.center-information {
+    font-size: 5rem;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0B62E7;
+    margin-bottom: 200px;
+}
+
+.center-information p + p {
+    font-size: 2rem;
+}
+
+.center-information + .center-information {
+    border-left: 1px solid #0B62E7;
+}
+
+
+.container-information {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+
+.container-information + .container-information {
+    margin-top: 100px;
+}
+
+.image-information-container {
+    width: 45%;
+}
+
+.image-information-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.article-information-container {
+    width: 45%;
+    color: #0B62E7;
+    padding-top: 10px;
+}
+
+.header-information-container h3 {
+    font-size: 30px;
+    font-family: 'AmsiPro-Regular', sans-serif;
+}
+
+.header-information-container p {
+    font-family: 'AmsiPro-Light', sans-serif;
+}
+
+.header-information-container hr {
+    width: 50%;
+    height: 4px;
+    background: #0B62E7;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.body-information-container {
+    margin-top: 50px;
+    text-align: left;
+    width: 90%;
+    font-family: 'AmsiPro-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.body-information-container ul{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.right-content {
+    flex-direction: row-reverse;
+}
+
+.right-content::before{
+    content: '';
+    width: 500px;
+    height: 550px;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 70%;
+    z-index: -1;
+    border-radius: 76% 9% 0% 43% / 49% 0% 40% 45% ;
+}
+
+.left-content-container::before {
+    content: '';
+    width: 500px;
+    height: 550px;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 70%;
+    z-index: -1;
+    border-radius: 0% 43% 46% 0% / 10% 51% 46% 52%;
+}
+
+#last::before {
+    display: none;
+}
+
+#first-left::before, #second-right::before, #fourth-left::before {
+    background: #FFB200;
+}
+
+#first-right::before, #third-left::before, #fourth-right::before {
+    background: #6500C4;
+}
+
+#second-left::before, #third-rigth::before{
+    background: #0099F2;
+}
+
+#fifth-left::before {
+    background: #EA4F97;
+}

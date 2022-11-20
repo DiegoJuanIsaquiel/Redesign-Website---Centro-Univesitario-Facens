@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Página Inicial - Portal Acadêmico Facens</title>
 </head>
 
@@ -23,18 +24,20 @@
       </div>
 
       <div class="nav-title">
-        <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
+        <button onclick="abrirPortalAcademico()" id="portal-academico-btn">Portal Acadêmico</button>
         <div id="sub-title" style="display: none;">
-          <a href="#">Dados pessoais</a>
-          <a href="#">Histórico</a>
-          <a href="#">Notas / Faltas</a>
-          <a href="#">Notas de avaliações</a>
-          <a href="../complementary-activities/complementary-activities.html">Ativ.currículares</a>
-          <a href="#">Matrícula on-line</a>
-          <a href="#">Solicitações</a>
+          <a href="../personal-data/personal-data.html">Dados pessoais</a>
+          <a href="../../main/historic/historic.html">Histórico</a>
+          <a href="../notes-and-fouls/notes-and-fouls.html">Notas / Faltas</a>
+          <a href="../complementary-activities/complementary-activities.html">Ativ. Currículares</a>
+          <a href="../registration/registration.html">Matrícula on-line</a>
+          <a href="../support/support.html">Solicitações</a>
         </div>
 
-        <button>Suporte</button>
+        <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
+          <div id="sub-title-support" style="display: none;">
+             <a href="../create-support/create-support.html">Solicitar Atendimento</a>
+          </div>
         <button>Ferramentas</button>
       </div>
 
@@ -47,8 +50,7 @@
   <div id="title-container">
     <div>
       <h2>Olá, Bruna</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos alias, ea ab suscipit illum cum laborum
-        eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
+      <p>Seja bem-vindo(a) novamente! Aqui você pode consultar sua situação acadêmica, verificar as principais datas nos próximos 30 dias e justificar ausências.</p>
     </div>
     <div class="bell">
       <i class="fa-solid fa-bell"></i>

@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <title>Login</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Faça login para Acessar suas informações - Portal Acadêmico Facens</title>
 </head>
 
 <body>
-  <form>
+  <form name="loginEmail" onsubmit="return validateForm();" method="post">
     <div class="logo-container">
       <img src="../../assets/logo-facens.png" alt="Logo-Facens">
       <span>Faça o acesso ao sistema</span>
@@ -27,7 +28,7 @@
     </div>
 
     <div class="btn">
-      <button id="login"><a href="../../pages/main/home/home.html">Acessar</a></button>
+      <input type="submit" value="Acessar">
     </div>
   </form>
 

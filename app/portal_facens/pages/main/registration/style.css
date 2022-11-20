@@ -1,0 +1,344 @@
+ /* Corpo da home  */
+
+ a {
+   text-decoration: none !important;
+ }
+
+ #registration-body {
+   display: block;
+   position: absolute;
+   left: 60%;
+   top: 10%;
+   transform: translate(-50%, -50%);
+   width: 79%;
+   z-index: -1;
+ }
+
+ #registration-container {
+   left: 28%;
+   top: 116%;
+   transform: translate(-50%, -50%);
+   width: 38rem;
+   position: absolute;
+ }
+
+ h2 {
+   color: #2F2F2FD6;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 34px;
+   margin: 8px 0;
+
+   font-weight: 700 !important;
+ }
+
+ p {
+   color: #1E1E1E;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   width: 73%;
+ }
+
+ .bell {
+   display: flex;
+   justify-content: end;
+   position: absolute;
+   top: 30%;
+   right: 3%;
+   color: #D9D9D9;
+   cursor: pointer;
+ }
+
+ .bell::after {
+   content: '4';
+   color: #FFF;
+   background-color: #FFB200;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 18px;
+   height: 18px;
+   position: absolute;
+   right: -20%;
+   top: -15%;
+ }
+
+ .fa-solid {
+   font-size: 2rem;
+   position: relative;
+ }
+
+ .notifications-container {
+   background-color: #FFF;
+   border: 1px solid #ddd;
+   border-radius: 12px;
+   box-shadow: 0 0 6px #00000029;
+   width: 50vw;
+   height: 50vh;
+   position: absolute;
+   right: 2%;
+   top: 65%;
+   z-index: 10000;
+   overflow-y: scroll;
+   display: none;
+ }
+
+ .notifications-container.active {
+   display: block;
+ }
+
+ .notifications-container::-webkit-scrollbar {
+   width: 4px;
+ }
+
+ .notifications-container::-webkit-scrollbar-thumb {
+   background: #1E1E1E;
+   border-radius: 20px;
+ }
+
+ .notifications-container ul {
+   list-style-type: none;
+   padding: 0;
+ }
+
+ .notifications-container ul li {
+   font-family: 'Open Sans', sans-serif;
+   padding-bottom: 12px;
+   margin: 0 18px;
+   font-size: 14px;
+   color: #BABABA;
+ }
+
+ .notifications-container ul li:not(:last-of-type) {
+   border-bottom: 2px solid #BABABA;
+ }
+
+ .notifications-container .title-container {
+   display: flex;
+   justify-content: space-between;
+
+   width: 100%;
+ }
+
+ .notifications-container .title-container h4 {
+   color: #1E1E1E;
+   margin-bottom: 0;
+
+   width: 40%;
+ }
+
+ .notifications-container .title-container p {
+   color: #BABABA;
+   text-align: right;
+ }
+
+ #body-container {
+   left: 25%;
+   top: 116%;
+   transform: translate(-50%, -50%);
+   width: 34rem;
+   position: absolute;
+ }
+
+ /* Registro da matrícula */
+
+ .register-grid {
+   background-color: #FFFFFF;
+   border: 1px solid #DDDDDD;
+   border-radius: 8px;
+   box-shadow: 0 0 6px #00000029;
+
+   position: absolute;
+   width: 173%;
+
+   display: flex;
+   gap: 13px;
+
+   padding: 24px;
+
+   min-height: 44rem;
+   max-height: 64rem;
+ }
+
+ .semester-grid {
+   border: solid 1px #E0E0E0;
+   border-radius: 11px;
+   max-height: 53rem;
+ }
+
+ .first-semester {
+   display: none;
+   margin-top: -1rem;
+   display: grid;
+   padding-left: 1.5rem;
+   grid-gap: 0.8rem;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+ }
+
+ .accordion {
+   font-size: 1rem;
+   width: 33vw;
+   margin: 0 auto;
+   border-radius: 5px;
+ }
+
+ .accordion-header,
+ .accordion-body {
+   background: white;
+ }
+
+ .accordion-header {
+   background: #ffffff;
+
+   cursor: pointer;
+   color: #1E1E1E;
+
+   text-transform: uppercase;
+   font-size: .7em;
+   letter-spacing: .1em;
+   transition: all .3s;
+
+   padding: 1.5em 1.5em;
+ }
+
+ .accordion__item {
+   border-bottom: 1px solid #dcdcdc;
+ }
+
+ .accordion__item .accordion__item {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+ }
+
+ .accordion-body {
+   background: #FAFAFA;
+   color: #2C2C2C;
+   display: none;
+ }
+
+ .accordion-body__contents {
+   padding: 1.5em 1.5em;
+   font-size: .85em;
+ }
+
+ .accordion__item.active:last-child .accordion-header {
+   border-radius: none;
+ }
+
+ .accordion:first-child > .accordion__item > .accordion-header {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 11px;
+
+   border-radius: 11px;
+ }
+
+ .accordion__item>.accordion-header:after {
+   content: "\f3d0";
+   font-family: IonIcons;
+   font-size: 1.2em;
+   float: right;
+   position: relative;
+   top: -2px;
+   transition: .3s all;
+   transform: rotate(0deg);
+ }
+
+ .accordion__item.active>.accordion-header:after {
+   transform: rotate(-180deg);
+ }
+
+ .accordion__item .accordion__item .accordion-header {
+   background: #f1f1f1;
+   color: #353535;
+ }
+
+ .information-grid {
+   display: flex;
+   gap: 2.5rem;
+ }
+
+ input {
+   pointer-events: none;
+ }
+
+ .first-check {
+   padding: 0.8rem;
+   margin-left: -0.8rem;
+ }
+
+ .form-check {
+   border: 1px solid #dadada;
+   border-left: none;
+   border-right: none;
+   padding: 0.8rem;
+   border-bottom: none;
+ }
+
+ label {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+ }
+
+ /* Tabela de Hora */
+
+ table {
+   text-align: center;
+   z-index: -1;
+ }
+
+ table th {
+   border: solid 1px #71839B80;
+   color: #888888;
+   font-weight: 600;
+   text-align: center;
+   padding: 0 1.1rem;
+ }
+
+ table td {
+   border: solid 1px #71839B80;
+   text-align: center;
+   padding: 16px 1rem;
+
+   max-width: 84px;
+ }
+
+ .hora {
+   border: solid 1px #71839B80;
+   width: 36%;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   color: #888888;
+   font-size: 14px;
+   text-align: inherit;
+   padding: 0 1rem;
+ }
+
+ .materia{
+  white-space: nowrap;
+  text-align: left;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+
+ .button-container{
+  text-align: right;
+  margin-top: 72px;
+ }
+
+ .button-container button{
+  background-color: #C9C9C9;
+  border: none;
+  border-radius: 8px;
+  color: #FAFAFA;
+
+  padding: 8px 42px;
+ }

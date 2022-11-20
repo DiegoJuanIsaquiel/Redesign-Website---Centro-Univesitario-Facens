@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividades Complementares - Portal Acadêmico</title>
+    <title>Solicitações de Atendimento - Portal Acadêmico</title>
     <script src="../scripts/general.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="complementary-activities.css">
+    <link rel="stylesheet" href="support.css">
     <link rel="stylesheet" href="../css/general.css">
 </head>
 
@@ -29,16 +29,15 @@
                     <a href="../personal-data/personal-data.html">Dados pessoais</a>
                     <a href="../historic/historic.html">Histórico</a>
                     <a href="../notes-and-fouls/notes-and-fouls.html">Notas / Faltas</a>
-                    <a href="../complementary-activities/complementary-activities.html" class="active">Ativ. Currículares</a>
-                    <a href="../registration/registration.html">Matrícula on-line</a>
-                    <a href="../support/support.html">Solicitações</a>
+                    <a href="../complementary-activities/complementary-activities.html">Ativ. Curriculares</a>
+                    <a href="../registration/registration.html">Dados pessoais</a>
+                    <a href="../support/support.html" class="active">Solicitações</a>
                 </div>
 
-                <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
+                                <button onclick="abrirSuporte()" id="suporte-btn">Suporte</button>
                 <div id="sub-title-support" style="display: none;">
                     <a href="../create-support/create-support.html">Solicitar Atendimento</a>
                 </div>
-
                 <button>Ferramentas</button>
             </div>
 
@@ -49,8 +48,8 @@
     </div>
     <div class="body-content">
         <div class="header-container">
-            <h2>Atividades Curriculares</h2>
-            <p>Aqui você pode consultar todas as atividades curriculares que você realizou ao longo do seu curso. Horas Complementares, treinamentos e estágios supervisionados serão armazenados</p>
+            <h2>Solicitações</h2>
+            <p>Acompanhe o andamentos das suas solicitações de atendimento. Você também pode criar uma nova solicitação clicando no botão "Solicitar Atendimento";</p>
         </div>
         <div class="bell">
             <i class="fa-solid fa-bell"></i>
@@ -90,31 +89,48 @@
             </ul>
         </div>
         <div class="main-content">
-            <h2 class="title-container">Atividades Curriculares</h2>
+            <h2 class="title-container">Solicitações de Atendimento</h2>
             <table class="table-container">
                 <thead>
                     <tr>
-                        <th>Componente</th>
-                        <th>Descrições</th>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Support Key</th>
                         <th>Data Inicial</th>
                         <th>Data Final</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Horas Complementares</td>
-                        <td>Plugin Inovação 2022</td>
-                        <td>18/05/2022</td>
-                        <td>20/05/2022</td>
+                        <td>1</td>
+                        <td>Horas complementares não foram contabilizadas</td>
+                        <td>T60B5AB6</td>
+                        <td>03/08/2022</td>
+                        <td> - </td>
+                        <td class="ongoing">Em Andamento</td>
                     </tr>
                     <tr>
-                        <td>Horas Complementares</td>
-                        <td>Atividades Externas Complementares 2022S1 - Engenharias</td>
-                        <td>01/01/2022</td>
-                        <td>30/06/2022</td>
+                        <td>2</td>
+                        <td>Trancamento de disciplina</td>
+                        <td>#9407VN30</td>
+                        <td>18/05/2022</td>
+                        <td>18/06/2022</td>
+                        <td class="closed">Encerrado</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Equivalência de Matérias</td>
+                        <td>#C8KSX4S5</td>
+                        <td>24/03/2022</td>
+                        <td>25/03/2022</td>
+                        <td class="completed">Finalizado</td>
                     </tr>
                 </tbody>
             </table>
+            <div class="button-container">
+                <a href="../create-support/create-support.html">Solicitar atendimento</a>
+            </div>
         </div>
     </div>
 
